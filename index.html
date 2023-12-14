@@ -23,19 +23,20 @@
   </head>
   <body>
     
-    <header>
+    <header data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
       <input  type="checkbox" id="nav_check" hidden>
       <img src="Photos/last-log.PNG"  alt="logo" >
       <nav class="nav-bar">
       <ul>
-        <li><a href="#home"><span>H</span>OME</a></li>
-        <li><a href="#about"><span>A</span>BOUT</a></li>
-        <li><a href="#skills"><span>S</span>KİLLS</a></li>
-        <li><a href="#educationn"><span>E</span>DUCATION</a></li>
-        <li><a href="#form"><span>C</span>ONTACT</a></li>
+        <li><a href="#home">HOME</a></li>
+        <li><a href="javascript:document.getElementById('hrefabout').scrollIntoView(true);">ABOUT</a></li>
+        <li><a href="javascript:document.getElementById('skillshref').scrollIntoView(true);">SKİLLS</a></li>
+        <li><a href="javascript:document.getElementById('educationn').scrollIntoView(true);">EDUCATION</a></li>
+        <li><a href="javascript:document.getElementById('hrefexperience').scrollIntoView(true);">EXPERIENCE</a></li>
+        <li><a href="javascript:document.getElementById('form').scrollIntoView(true);">CONTACT</a></li>
       </ul>
     </nav>
-    <label for="nav_check" class="hamburger">
+    <label data-aos="fade-down" data-aos-duration="2000" data-aos-once="true" for="nav_check" class="hamburger">
       <div></div>
       <div></div>
       <div></div>
@@ -53,13 +54,13 @@
       </div>
     </section>
     <section id="about">
-      <div class="container" data-aos="slide-left" data-aos-duration="1500" data-aos-once="true">
+      <div class="container" data-aos="slide-left" data-aos-duration="1500" data-aos-once="true" id="hrefabout">
         <div class="row">
           <div class="about-col1">
-            <img src="Photos/pp.png" alt="my_photo" />
+            <img src="Photos/My_Photo.jpeg" alt="my_photo" />
           </div>
           <div class="about-col2">
-            <h1 data-aos="slide-left" data-aos-duration="1500" data-aos-once="true">About Me</h1>
+            <h1 data-aos="slide-left" data-aos-duration="1000" data-aos-once="true">About Me</h1>
             <p>
                 Welcome to my personal website! My name is Ardan, and I am a passionate computer engineering student at International Balkan University in North Macedonia.
                 I am thrilled to embark on this journey of learning and exploration in the fascinating world of technology. Through this website, I hope to share my journey as a computer engineering student and connect with others who share a similar passion for technology.
@@ -76,7 +77,7 @@
         <h2>My <span>Skills</span></h2>
       </div>
       <div data-aos="slide-right" data-aos-duration="1500" data-aos-once="true">
-      <p class="text">Here is my skills to represent my Expertise</p>
+      <p class="text" id="skillshref">Here is my skills to represent my Expertise</p>
     </div>
       </div>
       
@@ -149,6 +150,18 @@
               <p>2014-<span>2018</span></p>
           </div>
       </div>
+      <div id="hrefexperience"></div>
+    </section>  
+    
+    
+
+    <section data-aos="slide-right" data-aos-duration="1500" data-aos-once="true" class="experience">
+      <h2><span>E</span>xperience</h2>
+      <div class="experience-item">
+        <h3>Mobile Game Development Intern at <span>Blay Games</span></h3>
+        <p class="date">August 10, 2023 <span>- October 10, 2023</span></p>
+        <p class="description">Worked on mobile game development using C#/Unity language. Contributed to various aspects of game design and development.</p>
+      </div>
     </section>
 
 
@@ -168,7 +181,7 @@
       <div class="inner-footer">
         <ul class="footer-col" >
           <li><a href="mailto:akinardan@gmail.com "target="_blank"><p><i class="fa-solid fa-envelope" style="color: #c65252;"></i> Email</p><br> <span> akinardan@gmail.com</span></a></li>
-          <li style="margin-right: 20px;" ><a href="tel:"target="_blank"><p><i class="fa-solid fa-phone"style=" color: #c65252; "></i> Number</p><br><span> 0500 000 11 33</span></a></li>
+          <li style="margin-right: 20px;" ><a href="tel:"target="_blank"><p><i class="fa-solid fa-phone"style=" color: #c65252; "></i> Number</p><br><span> 0500 000 00 00</span></a></li>
           <li><a href="#"><p><i class="fa-solid fa-house-user"style="color: #c65252;"></i> Address</p><br><span> Izmir | Narlidere</span></a></li>
         </ul>
         <ul class="footer-col">
@@ -207,3 +220,4 @@ $(document).ready(function(){
   </body>
   
 </html>
+
